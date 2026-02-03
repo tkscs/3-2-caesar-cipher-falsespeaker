@@ -28,7 +28,10 @@ ciphertext = ""
 for character in plaintext:
     # do something to the character to encrypt it
     # YOUR CODE HERE
-    encrypted_character = "a" # CHANGE THIS!
+    if character in plaintext:
+        encrypted_character = "*"
+    else:
+        encrypted_character = character
     ciphertext += encrypted_character
 
 print(f"{ciphertext = }")
